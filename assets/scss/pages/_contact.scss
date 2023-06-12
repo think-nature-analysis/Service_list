@@ -1,0 +1,296 @@
+/*--
+/*  20 - Contact CSS
+/*----------------------------------------*/
+
+// Contact Section
+.techwix-contact-section {
+    
+    & .contact-wrap {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 60% 100%;
+
+        & .contact-info {
+            
+            & .section-title {
+                
+                & .title {
+                    position: relative;
+                    padding-left: 45px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        background: $primary-2;
+                        height: 150px;
+                        width: 4px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            & ul {
+                padding-top: 15px;
+                & li {
+                    margin-top: 15px;
+                    padding-right: 65px;
+
+                    &:first-child {
+                        border-top: 0;
+                    }
+                    & .contact-info-item {
+
+                        & .contact-info-icon {
+
+                            & i {
+                                font-size: 50px;
+                                color: $primary-2;
+                                @media #{$small-mobile} {
+                                    font-size: 42px;
+                                }
+                            }
+                        }
+                        & .contact-info-text {
+                            margin-left: 20px;
+                            & .title {
+                                font-size: 24px;
+                                line-height: 30px;
+                                color: $heading-color;
+                            }
+                            & p {
+                                font-size: 16px;
+                                line-height: 30px;
+                                color: $heading-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .contact-form {
+            background: #f8f8f8;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 110px;
+            @media #{$laptop-device} {
+                margin-left: 40px;
+            }
+            @media #{$desktop-device} {
+                margin-left: 15px;
+            }
+            @media #{$tablet-device} {
+                margin-left: 0;
+                margin-top: 60px;
+            }
+            & .contact-form-wrap {
+                padding: 55px 40px;
+                @media #{$desktop-device} {
+                    padding: 40px;
+                }
+                & .heading-wrap {
+                    margin-bottom: 30px;
+                    & .sub-title {
+                        font-size: 14px;
+                        line-height: 30px;
+                        font-family: $heading-font;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: $primary-2;
+                    }
+                    & .title {
+                        font-size: 42px;
+                        line-height: 54px;
+                        font-weight: 600;
+                        color: #333333;
+                        @media #{$desktop-device} {
+                            font-size: 32px;
+                            line-height: 48px;
+                        }
+                        @media #{$small-mobile} {
+                            font-size: 28px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                & .single-form {
+                    margin-top: 25px;
+                    & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+                        height: 55px;
+                        line-height: 55px;
+                        border: 1px solid #ebebeb;
+                        padding-left: 15px;
+    
+                        @include placeholder{
+                            opacity: 0.95;
+                            font-size: 14px;
+                            color: #4c4d56;
+                            font-family: $heading-font;
+                            font-weight: 400;
+                        }
+                    }
+                    & textarea {
+                        height: 135px;
+                        border: 1px solid #ebebeb;
+                        padding-left: 15px;
+                        resize: none;
+    
+                        @include placeholder{
+                            opacity: 0.95;
+                            font-size: 14px;
+                            color: #4c4d56;
+                            font-family: $heading-font;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                & .form-btn {
+                    margin-top: 25px;
+                    & .btn {
+                        font-size: 16px;
+                        width: 100%;
+                        height: 55px;
+                        line-height: 50px;
+                        margin-bottom: 10px;
+                        @media #{$small-mobile} {
+                            padding: 0 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+// Home Style Four
+
+.techwix-contact-section-02 {
+    
+    & .contact-wrap {
+
+        & .contact-info {
+            
+            & .section-title {
+                
+                & .title {
+
+                    &::before {
+                        background: $primary;
+                    }
+                }
+            }
+
+            & ul {
+                & li {
+
+                    & .contact-info-item {
+
+                        & .contact-info-icon {
+
+                            & i {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .contact-form {
+            background: $white;
+            box-shadow: 0px 0px 139px 0px rgba(0, 0, 0, 0.1);
+
+            & .contact-form-wrap {
+                & .heading-wrap {
+                    & .sub-title {
+                        color: $primary;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+ 
+// Contact Info Wrap
+.contact-info-section {
+
+    & .contact-info-wrap {
+        margin-top: -30px;
+        & .single-contact-info {
+            background: #f8f8f8;
+            padding: 50px 80px 75px;
+            border-radius: 5px;
+            margin-top: 30px;
+            @media #{$desktop-device} {
+                padding: 50px 40px 60px;
+            }
+            @media #{$large-mobile} {
+                padding: 50px 30px 60px;
+            }
+            & .info-icon {
+                    
+            }
+            & .info-content {
+
+                & .title {
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: 600;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    
+                }
+                & p {
+                    font-size: 18px;
+                    line-height: 30px;
+                    @media #{$desktop-device} {
+                        font-size: 16px;
+                    }
+                    @media #{$tablet-device} {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.techwix-contact-section-03 {
+    
+    & .contact-wrap {
+        margin-bottom: -60px;
+        position: relative;
+        z-index: 5;
+        & .contact-form {
+            
+            & .contact-form-wrap {
+                
+                & .form-btn {
+                    text-align: center;
+                    & .btn {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Contact Map
+.contact-map-section {
+
+    & .contact-map-wrap {
+        margin-bottom: -8px;
+    
+        & iframe {
+            height: 550px;
+            width: 100%;
+            filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+        }
+    }
+}

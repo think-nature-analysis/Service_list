@@ -1,0 +1,399 @@
+/*--
+/*  12 - Choose Us CSS
+/*----------------------------------------*/
+
+.techwix-choose-us-section {
+    background: #f8f8f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 210px;
+    & .section-title {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+}
+
+  
+.choose-us-content-wrap {
+    padding-top: 30px;
+
+    & .more-choose-content {
+        margin-top: 30px;
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+
+            & a {
+                font-weight: 600;
+                color: $primary;
+
+                & i {
+                    position: relative;
+                    top: 1px;
+                    transition: $transition-default;
+                }
+
+                &:hover {
+
+                    & i {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.choose-us-item {
+    margin-top: 30px;
+    & .choose-us-img {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: $transition-default;
+
+        & a {
+            display: block;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(180deg, rgba(249, 80, 0, 0) 35%, rgba(14, 14, 14, 0.92) 78%);
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+        }
+
+        & .choose-us-content {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            padding: 60px 60px;
+            padding-right: 75px;
+
+            & .title {
+                font-size: 24px;
+                line-height: 27px;
+                color: $white;
+                padding-left: 15px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    background: linear-gradient( -160deg, rgb(67,186,255) 0%, rgb(113,65,177) 100%);
+                    width: 3px;
+                    height: 50px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            & p {
+                font-size: 14px;
+                line-height: 24px;
+                color: $white;
+                margin-top: 20px;
+                margin-bottom: -115px;
+                opacity: 0;
+                visibility: hidden;
+                transition: $transition-default;
+            }
+        }
+    }
+
+    &:hover {
+        & .choose-us-img {
+    
+            & .choose-us-content {
+    
+                & p {
+                    opacity: 1;
+                    visibility: visible;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.choose-us-item {
+    @media #{$laptop-device} {
+        & .choose-us-img {
+    
+            & .choose-us-content {
+                padding-right: 40px;
+            }
+        }
+    }
+    @media #{$desktop-device} {
+        & .choose-us-img {
+    
+            & .choose-us-content {
+                padding: 40px 30px;
+                padding-right: 25px;
+            }
+        }
+    }
+}
+
+// Home Style Four
+
+.techwix-choose-us-section-02 {
+    background: #f8f8f8;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 400px;
+    z-index: 1;
+
+    & .choose-us-left {
+        padding-right: 50px;
+        & .text {
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 40px;
+            padding-right: 65px;
+        }
+
+        & .author-skill-wrap {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            padding-right: 40px;
+
+            & .author-wrap {
+
+                & .name {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                }
+                & .designation {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+            & .skill-wrap {
+                flex: 1;
+                padding-left: 50px;
+                margin-left: 30px;
+                position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        background: #ececec;
+                        width: 2px;
+                        height: 95px;
+                        transform: translateY(-50%);
+                    }
+
+                    & .counter-bar {
+                        padding-top: 0px;
+                    
+                        & .skill-item {
+                            margin-top: 15px;
+                            &.skill-item-01 {
+                                margin-top: 0;
+                            }
+                    
+                            & .skill-bar {
+                    
+                                & .bar-inner {
+                        
+                                    & .progress-line {
+                                        background: $primary;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+            }
+        }
+    }
+
+    & .choose-us-right {
+        padding-left: 10px;
+        & .faq-accordion {
+            @media #{$tablet-device} {
+                margin-top: 50px;
+            }
+            & .accordion-item {
+                border: 0;
+                box-shadow: 0px 0px 161px 0px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                overflow: hidden;
+                margin-top: 35px;
+                
+        
+                & .accordion-button {
+                    padding: 25px 35px;
+            
+                    & .title {
+                        font-size: 22px;
+                        color: $heading-color;
+                        font-family: $heading-font;
+                        display: inline-block;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        position: relative;
+                        z-index: 1;
+                    }
+            
+                    &::after {
+                        position: absolute;
+                        content: "+";
+                        border: none;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 24px;
+                        font-size: 30px;
+                        font-weight: 400;
+                        text-align: center;
+                        border-radius: 50%;
+                        color: $white;
+                        background: linear-gradient( -140deg, rgb(67,186,255) 0%, rgb(113,65,177) 100%);
+                        right: 35px;
+                        transition: all .3s ease-out 0s; 
+                    }
+                }
+            
+                & .accordion-body {
+                    font-size: 14px;
+                    border-top: 1px solid #ebebeb;
+                    padding: 30px 35px;
+                }
+            
+                & .accordion-button:focus {
+                    box-shadow: none;
+                }
+            
+                & .accordion-button:not(.collapsed) {
+                    background-color: $white;
+                    box-shadow: none;
+            
+                    &::after {
+                        position: absolute;
+                        content: "-";
+                        border: none;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 24px;
+                        text-align: center;
+                        background: #e6eef8;
+                        color: $heading-color;
+                        transform: rotate(0); 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.techwix-choose-us-section-02  {
+    @media #{$desktop-device} {
+        padding-bottom: 350px;
+        & .choose-us-left  {
+            padding-right: 0;
+        }
+    }
+    @media #{$tablet-device} {
+        padding-bottom: 330px;
+        & .choose-us-right {
+            padding-left: 0;
+            padding-top: 15px;
+        }
+    }
+}
+
+// About Page Style
+  
+.choose-us-item-02 {
+    background: $white;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 40px 45px 40px;
+    margin-top: 30px;
+    position: relative;
+
+    & .choose-us-img {
+
+        & img {
+            transition: $transition-default;
+        }
+    }
+
+    & .choose-us-content {
+
+        & .title {
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            padding-top: 20px;
+            
+        }
+    }
+
+    &:hover {
+
+        & .choose-us-img {
+
+            & img {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+// Choose Us Page Style
+
+.techwix-choose-us-section-03 {
+    background: $white;
+    padding-top: 120px;
+    @media #{$desktop-device} {
+        padding-top: 100px;
+    }
+    @media #{$tablet-device} {
+        padding-top: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 60px;
+    }
+
+}
+
+
+.techwix-choose-us-section-04 {
+    background: $white;
+    padding-top: 120px;
+
+    & .choose-us-wrap {
+        margin-top: -30px;
+    }
+    & .choose-us-content-wrap {
+        padding-top: 0;
+    }
+
+    & .choose-us-item-02  {
+        border: 1px solid #e1e1e1;
+        box-shadow: none;
+    }
+}

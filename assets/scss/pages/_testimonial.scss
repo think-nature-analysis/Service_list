@@ -1,0 +1,338 @@
+/*--
+/*  11 - Testimonial CSS
+/*----------------------------------------*/
+
+.testimonial-wrap {
+    height: 530px;
+    background: #f0f0f0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
+    padding-top: 75px;
+    padding-bottom: 90px;
+    padding-left: 75px;
+    padding-right: 65px;
+
+    & .testimonial-img {
+        position: relative;
+        z-index: 1;
+
+        & .shape-1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            animation: round-01 7s linear infinite;
+            z-index: -1;
+        }
+
+        & img {
+            position: relative;
+            bottom: 45px;
+        }
+    }
+    
+
+    & .testimonial-content-wrap {
+        max-width: 520px;
+        background: $white;
+        padding: 50px 50px;
+        padding-bottom: 60px;
+        position: relative;
+    
+        &::before {
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 35px solid transparent;
+            border-top: 40px solid $white;
+            left: -50px;
+            bottom: 215px;
+            z-index: 1;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+
+
+.single-testimonial {
+
+    & p {
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    & .name {
+        font-size: 16px;
+        line-height: 20px;
+        color: $heading-color;
+    }
+
+    & .designation {
+        font-size: 12px;
+        line-height: 20px;
+        color: #47484a;
+    }
+}
+
+
+.testimonial-wrap {
+    @media #{$desktop-device} {
+        & .testimonial-img {
+
+            & .shape-1 {
+                left: -15px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        height: auto;
+        padding-top: 90px;
+
+        & .testimonial-img {
+            text-align: center;
+            & .shape-1 {
+                left: 75px;
+            }
+        }
+
+        & .testimonial-content-wrap {
+            margin: 0 auto;
+            margin-top: 30px;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+
+        & .testimonial-img {
+
+            & .shape-1 {
+                left: 15px;
+            }
+        }
+
+        padding-bottom: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @media #{$small-mobile} {
+        padding-left: 35px;
+        padding-right: 35px;
+
+        & .testimonial-content-wrap {
+            padding: 50px 30px;
+        }
+    }
+}
+
+
+
+// Home Style Two
+
+
+.techwix-testimonial-section-02 {
+    background: $primary-2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    & .testimonial-content-wrap-02 {
+        margin-top: 60px;
+    }
+
+    & .single-testimonial-02 {
+        background: $white;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        width: 570px;
+        margin: 0 40px;
+        position: relative;
+
+        & .testimonial-thumb {
+            position: absolute;
+            left: -7%;
+            top: 50%;
+            transform: translateY(-65%);
+            z-index: 3;
+
+            & img {
+                border-radius: 10px;
+            }
+        }
+
+        & .testimonial-content {
+            padding: 40px 130px;
+            padding-right: 40px;
+
+            & p {
+                font-size: 20px;
+                line-height: 32px;
+                color: #4c4d56;
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+        
+            & .name {
+                font-size: 16px;
+                line-height: 20px;
+                color: $heading-color;
+            }
+        
+            & .designation {
+                font-size: 12px;
+                line-height: 20px;
+                color: #47484a;
+            }
+        }
+    }
+}
+
+.testimonial-02-active {
+
+    & .swiper-pagination{
+        position: relative;
+        margin-top: 50px;
+        & .swiper-pagination-bullet {
+            margin: 0 7px;
+
+            &::after {
+                border: 1px solid $white;
+            }
+
+            &.swiper-pagination-bullet-active{
+                background-color: $white;
+            }
+        }
+    }
+}
+
+.techwix-testimonial-section-02 {
+    @media #{$laptop-device} {
+        & .single-testimonial-02 {
+            margin: 0 auto;
+        }
+    }
+    @media #{$large-mobile} {
+        & .single-testimonial-02 {
+            width: 100%;
+            text-align: center;
+    
+            & .testimonial-thumb {
+                position: relative;
+                text-align: center;
+                left: 0;
+                top: 0;
+                padding-top: 40px;
+                transform: translateY(0%);
+            }
+    
+            & .testimonial-content {
+                padding: 40px 45px;
+
+            }
+        }
+    }
+    
+}
+
+// Home Style Three
+
+.techwix-testimonial-section-03 {
+    background: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    & .single-testimonial-02 {
+        margin: 10px 40px;
+        @media #{$laptop-device} {
+            margin: 0 auto;
+        }
+
+
+        & .testimonial-thumb {
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: $primary;
+                width: 135px;
+                height: 135px;
+                border-radius: 10px;
+                transform: translate(5px, 5px);
+                z-index: -1;
+                @media #{$large-mobile} {
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-45%, -31%);
+                }
+            }
+
+        }
+    }
+}
+
+.techwix-testimonial-section-03 {
+    & .testimonial-02-active {
+
+        & .swiper-pagination{
+            
+            & .swiper-pagination-bullet {
+                background-color: #e8e8e8;
+    
+                &::after {
+                    border: 1px solid #57585a;
+                }
+    
+                &.swiper-pagination-bullet-active{
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
+
+
+// Home Style Three
+  
+.techwix-testimonial-section-04 {
+    background: #010f31;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    & .single-testimonial-02 {
+        background: rgba($white, 0.1);
+
+        & .testimonial-content {
+
+            & p {
+                color: $white;
+            }
+        
+            & .name {
+                color: $white;
+            }
+        
+            & .designation {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.techwix-testimonial-section-05 {
+    padding-top: 260px;
+}

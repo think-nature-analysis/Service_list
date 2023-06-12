@@ -1,0 +1,548 @@
+/*--
+/*  14 - CTA CSS
+/*----------------------------------------*/
+
+  
+.techwix-cta-section {
+
+    & .cta-wrap {
+        background: #e6f0fb;
+        max-width: 845px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 10px;
+        padding: 40px 125px;
+        @media #{$small-mobile} {
+            padding: 40px 90px;
+        }
+        @media #{$extra-small-mobile} {
+            padding: 40px 70px;
+        }
+
+        & .cta-icon {
+            position: absolute;
+            left: 30px;
+            top: -60px;
+            height: 85px;
+            width: 85px;
+            line-height: 85px;
+            text-align: center;
+            background: $white;
+            box-shadow: 0px 20px 43px 0px rgba(0, 0, 0, 0.09);
+            border-radius: 50%;
+            @media #{$tablet-device} {
+                top: -40px;
+            }
+        }
+        & .cta-content {
+
+            & p {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 500;
+                color: #4c4d56;
+
+                & a {
+                    font-weight: 600;
+                    color: $primary;
+
+                    &:hover {
+                        color: $heading-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Home Style Three
+
+.techwix-cta-section-02 {
+
+    & .cta-wrap {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        border-radius: 10px;
+        padding: 55px 105px;
+        margin-bottom: -90px;
+        & .cta-content {
+
+            & p {
+                font-size: 30px;
+                line-height: 44px;
+                font-weight: 600;
+                padding-left: 90px;
+                color: $white;
+            }
+
+            & .cta-icon {
+                width: 115px;
+                height: 115px;
+                line-height: 110px;
+                text-align: center;
+                border-radius: 50%;
+                position: absolute;
+                top: -35px;
+                left: 35px;
+                background: #010f31;
+            }
+        }
+
+        & .cta-btn {
+            text-align: right;
+            & .btn {
+                font-size: 22px;
+                background: $white;
+                color: $heading-color;
+                padding: 0 35px;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.techwix-cta-section-02 {
+    @media #{$tablet-device} {
+        & .cta-wrap {
+    
+            & .cta-content {
+                text-align: center;
+                margin-top: 40px;
+                & .cta-icon {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                & p {
+                    padding-left: 0;
+                }
+            }
+    
+            & .cta-btn {
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .cta-wrap {
+            padding: 55px 60px;
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .cta-wrap {
+            padding: 55px 25px;
+        }
+    }
+}
+
+// Home Style Five
+
+.techwix-cta-section-03 {
+
+    & .cta-wrap {
+        padding: 90px 105px;
+        border-radius: 10px;
+        background: #0c155f;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: -85px;
+        position: relative;
+        z-index: 5;
+
+        & .cta-content {
+            padding-right: 60px;
+            @media #{$laptop-device} {
+                padding-right: 30px;
+            }
+            & .title {
+                padding-left: 30px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    background: linear-gradient(-160deg, #43baff 0%, #7141b1 100%);
+                    width: 5px;
+                    height: 100%;
+                    transform: translateY(-45%);
+                }
+            }
+        }
+
+        & .cta-info {
+
+            & p {
+                font-size: 18px;
+                line-height: 30px;
+                font-family: $heading-font;
+                font-weight: 500;
+                color: $white;
+                margin-top: 10px;
+            }
+
+            & .number {
+                font-size: 36px;
+                line-height: 42px;
+                font-weight: 700;
+                color: #4bfff4;
+            }
+        }
+    }
+}
+
+.techwix-cta-section-03 {
+    @media #{$desktop-device} {
+        & .cta-wrap {
+
+            & .cta-content {
+                padding-right: 0;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        & .cta-wrap {
+            padding: 90px 75px;
+            & .cta-info {
+                margin-top: 50px;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .cta-wrap {
+            padding: 70px 40px;
+            & .cta-info {
+
+                & .number {
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    
+}
+
+// Home Style Six
+ 
+.techwix-cta-section-04 {
+    background: #0f0948;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+    & .cta-left {
+        padding-right: 115px;
+
+        & .section-title {
+
+            & .title {
+                position: relative;
+                padding-left: 40px;
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    background: linear-gradient(-160deg, #43baff 0%, #7141b1 100%);
+                    width: 5px;
+                    height: 100%;
+                    transform: translateY(-45%);
+                }
+            }
+        }
+    
+        & .cta-info {
+            display: flex;
+            align-items: center;
+            margin-top: 60px;
+            & .cta-icon {
+    
+            }
+    
+            & .cta-text {
+                flex: 1;
+                margin-left: 30px;
+                & p {
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: $white;
+                }
+        
+                & .number {
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    & .cta-right {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        max-width: 360px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 55%;
+            background: #27225b;
+            width: 360px;
+            height: 1px;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: #27225b;
+            width: 1px;
+            height: 280px;
+            transform: translate(-50%, -50%);
+        }
+
+        
+        & .counter-item-box {
+            position: relative;
+
+            
+        }
+
+        & .counter-item {
+
+            &.counter-1,
+            &.counter-2 {
+                padding-top: 45px;
+                margin-top: 25px;
+            }
+            
+
+            & span {
+                font-size: 48px;
+                line-height: 26px;
+                font-family: $heading-font;
+                font-weight: 600;
+                color: $primary-3;
+            }
+            & p {
+                font-size: 12px;
+                line-height: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+}
+
+.techwix-cta-section-04 {
+    @media #{$desktop-device} {
+        & .cta-left {
+            padding-right: 0px;
+        }
+        & .cta-right {
+            margin-top: 65px;
+    
+            &::before {
+                width: 320px;
+            }
+    
+            &::after {
+                height: 240px;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .cta-right {
+    
+    
+            & .counter-item {
+    
+                & span {
+                    font-size: 42px;
+                }
+
+            }
+        }
+    }
+}
+
+.techwix-cta-section-05 {
+
+    & .cta-wrap {
+        background: #0f0948;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        margin-bottom: -85px;
+        position: relative;
+        z-index: 5;
+        padding: 80px 110px 105px;
+        & .cta-content {
+
+            & .title {
+                font-size: 42px;
+                line-height: 54px;
+                font-weight: 600;
+                color: $white;
+            }
+
+            & .cta-btn {
+
+                & .btn-4 {
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 15px;
+                    padding: 0 30px;
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+}
+
+.techwix-cta-section-05 {
+    @media #{$desktop-device} {
+        & .cta-wrap {
+            padding: 80px 75px 80px;
+        }
+    }
+    @media #{$large-mobile} {
+        & .cta-wrap {
+            padding: 70px 70px 70px;
+            & .cta-content {
+
+                & .title {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .cta-wrap {
+            padding: 70px 50px 70px;
+            & .cta-content {
+
+                & .title {
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+            }
+        }
+    }
+}
+
+// Choose Us Page Style
+
+.techwix-cta-section-06 {
+    background: #010f31;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    & .cta-info {
+        @media #{$tablet-device} {
+            margin-top: 50px;
+        }
+
+        & .cta-text {
+            margin-left: 30px;
+            margin-top: 10px;
+            @media #{$tablet-device} {
+                margin-left: 0;
+            }
+            & p {
+                font-size: 18px;
+                line-height: 30px;
+                font-family: $heading-font;
+                font-weight: 500;
+                color: $white;
+            }
+    
+            & .number {
+                font-size: 36px;
+                line-height: 42px;
+                color: $primary;
+            }
+        }
+    }
+}
+
+
+
+// Service Page Style
+  
+.techwix-cta-section-07 {
+    background: none;
+
+    & .cta-wrap {
+        background: #010f31;
+        padding: 105px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: -150px;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.techwix-cta-section-07 {
+    @media #{$desktop-device} {
+        & .cta-info {
+
+            & .cta-text {
+                margin-left: 0px;
+            }
+        }
+    }
+    @media #{$tablet-device} {
+        & .cta-info {
+            margin-top: 50px;
+        }
+    }
+    @media #{$large-mobile} {
+        & .cta-wrap {
+            padding: 80px;
+        }
+    }
+    @media #{$small-mobile} {
+        & .cta-wrap {
+            padding: 60px;
+        }
+
+        & .cta-info {
+
+            & .cta-text {
+        
+                & .number {
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .cta-wrap {
+            padding: 45px;
+        }
+    }
+}

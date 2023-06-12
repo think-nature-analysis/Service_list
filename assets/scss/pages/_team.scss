@@ -1,0 +1,180 @@
+/*--
+/*  10 - Team CSS
+/*----------------------------------------*/
+
+.team-content-wrap {
+    padding-top: 70px;
+}
+
+.single-team {
+    position: relative;
+
+    & .team-img {
+        
+        & a {
+            position: relative;
+            display: block;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(249,80,0,0) 35%, rgba(14,14,14,0.89) 78%);
+                z-index: 0;
+                transition: $transition-default2;
+            }
+        }
+    }
+
+    & .team-content {
+        position: absolute;
+        left: 60px;
+        bottom: 40px;
+        z-index: 5;
+        transition: $transition-default;
+
+        & .name {
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+
+            & a {
+                color: $white;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 40px;
+                width: 20px;
+                top: 50%;
+                left: -30px;
+                transform: translateY(-50%);
+                background: linear-gradient( -180deg, rgb(67,186,255) 0%, rgb(113,65,177) 100%);
+                z-index: -1;
+                transition: $transition-default;
+            }
+        }
+
+        & .designation {
+            font-size: 12px;
+            line-height: 24px;
+            position: relative;
+            z-index: 1;
+            color: $white;
+        }
+
+        & .team-social {
+            opacity: 0;
+            visibility: hidden;
+            margin-bottom: -25px;
+            position: relative;
+            z-index: 1;
+            transition: $transition-default;
+            & .social {
+
+                & li {
+                    display: inline-block;
+
+                    & + li {
+                        margin-left: 10px;
+                    }
+
+                    & a {
+                        font-size: 14px;
+                        transform: translate3d(0, 0, 0);
+                        color: $white;
+                        transition: $transition-default;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+
+        & .team-content {
+            bottom: 90px;
+    
+            & .name {
+    
+                &::before {
+                    height: 145px;
+                    width: 80px;
+                    transform: translateY(-35%);
+                }
+            }
+    
+    
+            & .team-social {
+                opacity: 1;
+                visibility: visible;
+                margin-top: 10px;
+                & .social {
+    
+                    & li {
+    
+                        & a {
+                            
+                            &:hover {
+                                transform: translateY(-5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.team-active {
+
+    & .swiper-pagination{
+        position: relative;
+        margin-top: 50px;
+
+        & .swiper-pagination-bullet {
+            margin: 0 7px;
+
+        }
+    }
+}
+
+// About Page Style
+
+.techwix-team-section-02 {
+    background: #010f31;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.techwix-team-section-03 {
+
+    & .team-wrap {
+        margin-top: -30px;
+        & .single-team {
+            margin-top: 30px;
+
+            & .team-img {
+        
+                & a {
+                    
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

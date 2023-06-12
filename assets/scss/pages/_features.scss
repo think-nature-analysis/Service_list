@@ -1,0 +1,150 @@
+/*--
+/*  09 - Features CSS
+/*----------------------------------------*/
+
+.features-wrap {
+    margin-top: -170px;
+    position: relative;
+    z-index: 5;
+    @media #{$tablet-device} {
+        margin-top: -130px;
+    }
+}
+  
+.features-item {
+    display: flex;
+    align-items: center;
+    background: $white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 37px 79px 0px rgba(0, 0, 0, 0.13);
+    padding: 35px;
+    padding-right: 50px;
+    margin-top: 30px;
+    transition: $transition-default;
+    @media #{$extra-small-mobile} {
+        padding: 30px;
+        padding-right: 25px;
+    }
+
+    & .features-content {
+        flex: 1;
+        margin-left: 20px;
+        @media #{$extra-small-mobile} {
+            margin-left: 15px;
+        }
+
+        & .title {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 600;
+            @media #{$extra-small-mobile} {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Home Style Six
+.techwix-features-section-02 {
+
+    & .features-wrap-02 {
+        margin-top: -140px;
+        position: relative;
+        z-index: 5;
+    }
+
+    & .features-item {
+        background: linear-gradient( 90deg, rgb(105,62,170) 0%, rgb(1,235,242) 100%);
+        padding: 40px 35px;
+        padding-right: 90px;
+
+
+        & .features-content {
+            margin-left: 40px;
+            & .title {
+                font-size: 28px;
+                line-height: 30px;
+                font-weight: 700;
+                color: $white;
+
+                &:hover {
+
+                    & a {
+                        color: $primary-3;
+                    }
+                }
+            }
+
+            & p {
+                font-size: 14px;
+                line-height: 24px;
+                color: $white;
+                margin-top: 15px;
+            } 
+
+            & .lern-more {
+                font-size: 14px;
+                line-height: 30px;
+                font-weight: 600;
+                color: $primary-3;
+                margin-top: 5px;
+
+                & i {
+                    position: relative;
+                    top: 1px;
+                    transition: $transition-default;
+                }
+
+                &:hover {
+
+                    & i {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.techwix-features-section-02 {
+    @media #{$laptop-device} {
+        & .features-item {
+            padding-right: 38px;
+
+            & .features-content {
+                margin-left: 30px;
+            }
+        }
+    }
+    @media #{$desktop-device} {
+        & .features-wrap-02 {
+            margin-top: -90px;
+        }
+        & .features-item {
+            padding: 40px 25px;
+            padding-right: 25px;
+    
+            & .features-content {
+                margin-left: 25px;
+                & .title {
+                    font-size: 22px;
+                } 
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .features-item {
+            align-items: self-start;
+            flex-direction: column;
+            gap: 25px;
+
+            & .features-content {
+                margin-left: 0px; 
+            }
+        }
+    }
+}
+

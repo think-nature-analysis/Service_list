@@ -1,0 +1,158 @@
+/*--
+/*  24. Footer CSS
+/*----------------------------------------*/
+
+// Footer Section
+.footer-section {
+    background: #010717;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+// Footer Logo
+.footer-logo {
+    max-width: 170px;
+}
+
+// Footer Copyright
+.footer-copyright-area {
+    border-top: 1px solid #1b202f;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+}
+
+// Footer Copyright Wrapper
+.copyright-wrapper {
+ 
+}
+
+// Footer Copyright Text
+.copyright-text {
+    margin-top: 15px;
+    @media #{$large-mobile}{
+        text-align: center;
+    }
+
+    & p {
+        font-size: 14px;
+        color: $footer-text;
+    }
+}
+
+// Home Style Two
+
+.footer-section-02 {
+    background: $black;
+
+    & .footer-widget-wrap {
+        padding-top: 130px;
+    }
+}
+
+
+// Home Style Three
+.footer-section-03 {
+
+    & .footer-widget-wrap {
+        padding-top: 140px;
+    }
+}
+
+// Home Style Four
+.footer-section-04 {
+
+    & .footer-copyright-area {
+        border-top: 1px solid #e0e0e0;
+    
+    }
+
+    & .copyright-text {
+    
+        & p {
+            font-size: 14px;
+            color: $heading-color;
+        }
+    }
+}
+
+// Back Button
+.progress-wrap {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    display: block;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px rgba(0, 93, 224,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(130%);
+    z-index: 99;
+    transition: all 200ms linear;
+
+    &::after {
+        position: absolute;
+        content: "\f108";
+        font-family: flaticon !important;
+        text-align: center;
+        line-height: 45px;
+        font-size: 18px;
+        color: $primary;
+        left: 0;
+        top: 0;
+        height: 46px;
+        width: 46px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+    }
+
+    & svg {
+
+        & path {
+            fill: none;
+        }
+
+        &.progress-circle {
+
+            & path {
+                stroke: $primary;
+                stroke-width: 4;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    &.active-progress {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+// Back Button-3
+.progress-wrap-3 {
+    box-shadow: inset 0 0 0 2px rgba($primary-2, 0.2);
+    &::after {
+        color: $primary-2;
+    }
+
+    & svg {
+
+        & path {
+            
+        }
+
+        &.progress-circle {
+
+            & path {
+                stroke: $primary-2;
+            }
+        }
+    }
+}

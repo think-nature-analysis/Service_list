@@ -1,0 +1,170 @@
+/*--
+/*  17 - Pricing CSS
+/*----------------------------------------*/
+  
+// Pricing Section
+.techwix-pricing-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    & .pricing-wrap {
+
+        & .pricing-content-wrap {
+            padding-top: 30px;
+            
+
+            & .single-pricing {
+                background: #f8f8f8;
+                border-radius: 10px;
+                padding: 45px 55px 70px;
+                margin-top: 30px;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: -38%;
+                    top: -42%;
+                    border: 30px solid $white;
+                    width: 445px;
+                    height: 445px;
+                    border-radius: 50%;
+                    z-index: -1;
+                }
+
+                @media #{$laptop-device} {
+                    padding: 45px 30px 50px;
+                }
+                  
+            
+                & .pricing-badge {
+                    
+                    & .title {
+                        font-size: 36px;
+                        font-family: $heading-font;
+                        font-weight: 600;
+                        color: $heading-color;
+                        @media #{$small-mobile} {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                & .pricing-price {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    & .currency {
+                        font-size: 30px;
+                        line-height: 54px;
+                        font-family: $heading-font;
+                        font-weight: 600;
+                        color: $primary;
+                        display: inline-block;
+                        position: relative;
+                        bottom: -10px;
+                        @media #{$tablet-device} {
+                            font-size: 25px;
+                        }
+                    }
+
+                    & .price {
+                        font-size: 90px;
+                        line-height: 54px;
+                        font-family: $heading-font;
+                        font-weight: 600;
+                        display: inline-block;
+                        color: $primary;
+
+                        & span {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #959595;
+                        }
+                        @media #{$tablet-device} {
+                            font-size: 60px;
+                        }
+                    }
+                    
+                }
+                & .pricing-content {
+                    padding-top: 55px;
+                    & .pricing-list {
+
+                        & li {
+                            font-size: 18px;
+                            line-height: 30px;
+
+                            & + li {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    & .pricing-btn {
+                        padding-top: 40px;
+                        & .btn {
+                            height: 50px;
+                            line-height: 48px;
+                            box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
+                            padding: 0 50px;
+                            @media #{$laptop-device} {
+                                margin-right: 15px;
+                            }
+                            @media #{$tablet-device} {
+                                padding: 0 30px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                &.active {
+                    background: linear-gradient(-180deg, #43baff 0%, #7141b1 100%);
+
+
+                    &::before {
+                        opacity: 0.2;
+                    }
+                    & .pricing-badge {
+                    
+                        & .title {
+                            color: $white;
+                        }
+                    }
+                    & .pricing-price {
+                        & .currency {
+                            color: $white;
+                        }
+                        & .price {
+                            color: $white;
+
+                            & span {
+                                color: $white;
+                            }
+                        }
+                        
+                    }
+                    & .pricing-content {
+                        & .pricing-list {
+    
+                            & li {
+                                color: $white;
+    
+                                & i {
+                                    color: $white;
+                                }
+                            }
+                        }
+                        & .pricing-btn {
+                            & .pricing-contact {
+                                color: $secondary-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

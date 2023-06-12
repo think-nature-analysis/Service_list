@@ -1,0 +1,188 @@
+/*--
+/*  2.3 - Button CSS
+/*----------------------------------------*/
+
+.btn-margin{
+	margin-top: 40px;
+}
+
+.btn-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -5px;
+	& .btn {
+		margin: 5px;
+	}
+}
+
+   
+// Button
+.btn {
+	display: inline-block;
+	overflow: hidden;
+	transform: perspective(0) translateZ(0);
+	background: linear-gradient( 195deg, rgb(8,106,216) 0%, rgb(66,185,255) 100%);
+	box-shadow: 0 0 1px rgba(0,0,0,0);
+	border-color: transparent;
+	color: $white;
+	border-radius: 5px;
+	font-size: 18px;
+	font-family: $heading-font;
+	font-weight: 700;
+	height: 60px;
+	line-height: 56px;
+	padding: 0px 70px;
+	border: 0;
+	border-style: solid;
+	box-shadow: none;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+
+	&::before {
+		content: "";
+		background: $heading-color;
+		height: 50%;
+		width: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: auto;
+		transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		z-index: -1;
+	}
+
+	&::after {
+		content: "";
+		background: $heading-color;
+		height: 50%;
+		width: 0;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		z-index: -1;
+	}
+
+
+	&:focus,
+	&:focus:active{
+		box-shadow: none;
+	}
+	
+	&:hover{
+		color: $white;
+
+		&::before {
+			width: 100%;
+			right: 0;
+			left: auto;
+		}
+
+		&::after {
+			width: 100%;
+			left: 0;
+			right: auto;
+		}
+	}
+}
+
+.btn-3 {
+	height: 50px;
+	line-height: 45px;
+	font-size: 14px;
+	padding: 0 40px;
+	background: $primary-2;
+	color: $white;
+}
+
+.btn-4 {
+	height: 50px;
+	line-height: 48px;
+	font-size: 18px;
+	padding: 0 45px;
+	background: $primary-3;
+	box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
+	color: $white;
+
+	&:hover {
+		background: $white;
+		color: $primary-3;
+	}
+}
+
+
+  
+// Button Style
+.btn-round {
+	border-radius: 100px;
+}
+.btn-square {
+	border-radius: 0;
+}
+
+// Button With Icon
+[class*="btn-icon-"] {
+	& i {
+		position: absolute;
+		top: 0;
+		width: 60px;
+		height: 60px;
+		line-height: 28px;
+		text-align: center;
+		padding: 15px;
+		background-color: rgba($black, 0.1);
+	}
+}
+.btn-icon-left {
+	padding-left: 69px;
+	& i {
+		left: 0;
+		right: auto;
+	}
+}
+.btn-icon-right {
+	padding-right: 69px;
+	& i {
+		left: auto;
+		right: 0;
+	}
+}
+
+
+// Button Colors
+.btn-primary {
+	background-color: $primary;
+	border-color: $primary;
+	color: $white;
+
+	&:hover {
+		background-color: $primary;
+		border-color: $primary;
+	}
+}
+.btn-secondary {
+	background-color: $secondary;
+	border-color: $secondary;
+	color: $white;
+	&:hover {
+		background-color: $secondary;
+		border-color: $secondary;
+	}
+}
+.btn-white {
+	background-color: $white;
+	border-color: $white;
+	color: $heading-color;
+	box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
+
+	&::after {
+		background: $primary;
+	}
+	&::before {
+		background: $primary;
+	}
+
+}
