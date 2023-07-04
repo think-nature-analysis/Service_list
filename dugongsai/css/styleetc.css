@@ -1,0 +1,50 @@
+
+
+body {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #f0efe6;
+}
+
+.contents {
+  padding: 10vmin;
+}
+
+body {
+    font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+}
+h1 {
+  color: orange;
+  display: block;
+  font-size: 20px;
+  font-size: 4.5vmin;
+}
+
+.titler {
+  color: #191970;
+  display: inline-block;
+  font-size: 28px;
+  font-size: 7vmin;
+}
+
+p {
+  color: #222222;
+  font-size: 20px;
+  font-size: 3.2vmin;
+}
+
+ul {
+  width: 90%;
+  color: #222222;
+  display: inline-block;
+  font-size: 20px;
+  font-size: 3.2vmin;
+}
+
+.foot {
+  color: #222222;
+  font-size: 14px;
+  text-align: right;
+  font-size: 2.4vmin;
+}
