@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
 
     <!-- Page Title -->
-    <title>ジュゴンズAI　生物多様性可視化</title>
+    <title>ジュゴンズAI 豊かさを知る冒険</title>
 
     <!-- Responsive Metatag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,19 @@
     <!-- Page Description and Author -->
     <meta name="description" content="content description">
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script>
+var videos = [
+    ['img/ui/001.png'],
+    ['img/ui/002.png'],
+    ['img/ui/003.png'],
+    ['img/ui/004.png']
+];
+var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+$(".random_video").attr({"src":randomVideo[0]});
+</script>
 
-    <!-- Stylesheet
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Stylesheet
     ===================================================================================================  -->
 
 	<!-- Bootstrap -->
@@ -55,22 +66,33 @@
     <header class="BeanBGAnimate" id="menu-home">
         <div class="container">
         	<div class="wrapp">
-	            <div class="row-fluid text-center logo">
-	                <a href="#"><img alt="logo" src="img/logo.png"></a>  
-	            </div>    
+
 	            <div class="row-fluid">
 
 	                <div class="span6 text-center bigfigure">
-                         <img alt="logo" src="img/mobile.png"> 
-                        <!-- <img alt="logo" src="img/book.png">-->
+                         <!-- <img alt="logo" src="img/ui/001.png"> -->
+
+<SCRIPT language="JavaScript">
+<!--
+// ランダムに画像を表示する
+img = new Array();
+img[0] = "img/ui/001.png";
+img[1] = "img/ui/002.png";
+img[2] = "img/ui/003.png";
+img[3] = "img/ui/004.png";
+n = Math.floor(Math.random()*img.length);
+document.write("<img src='"+img[n]+"' border='0' width='300'>");
+//-->
+</SCRIPT>
+
 	                </div>
 
 	                <div class="span6 pull-right">
-	                   <h1>あおうえ柄祖せが用</h1>
-                           <h3>人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて</h3>
+	                   <img alt="logo" src="img/ui/dugongs.png" width="270">
+                           <h3>ジュゴンズアイは、沖縄の生物多様性情報を網羅したアプリです。あの花の名前は？ ここによくいる蝶の種類は？ アプリを片手にジュゴンも見つけられるかも！</h3>
 
 	                <div class="span12 text-center bigfigure">
-			<h2>以下からダウンロード！</h3>
+			<h2>以下からダウンロード！</h2>
 			</div>
 	                <div class="span12 text-center bigfigure">
 
@@ -107,8 +129,9 @@
 		        <!-- Title -->
 		        <div class="row-fluid text-center title">
 		            <div class="divider"></div>
-		            <h1>人でいうましはず</h1>
-		            <p>人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。</p>
+		            <h1>豊かさを知る冒険が、待っている。</h1>
+		            <p>沖縄県は、世界の生物多様性ホットスポットの一つである日本の中でも、生物多様性が突出し て高い地域です。各島は固有な生態系を有し、生物相は大陸との接続や気候変動といった長い歴史を反映しています。<br>海洋では、サンゴ礁が世界でもトップクラスの生物多様性を有しています。陸域では、沖縄本島北部やんばるの森や西表島は、世界自然遺産に登録されています。</p>
+<img src="img/ui/okinawa.png" alt="icon" width="400">
 		        </div>
 		        <!-- End Title -->
 		    </div>
@@ -131,13 +154,12 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                        <img src="img/plus-icon.png" alt="icon">挙げられるありがとうご
+                                        <img src="img/plus-icon.png" alt="icon">生物多様性マップ
                                     </a>
                                 </div>
                                 <div id="collapseOne" class="accordion-body collapse in">
                                     <div class="accordion-inner">
-                                        <p>
-人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。</p>
+                                        <p>海の魚が多い場所は？ 近所の公園には何種類のトンボがいるの？生物多様性マップで沖縄の自然を身近に感じよう！ 対象分類群：樹木、草花、鳥、トンボ、チョウ、哺乳類、爬虫類、両生類、淡水魚、海水魚、貝類、甲殻類、サンゴ、海藻、海草。</p>
                                     </div>
                                 </div>
                             </div>
@@ -147,12 +169,12 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                        <img src="img/plus-icon.png" alt="icon">ああああああ</a>
+                                        <img src="img/plus-icon.png" alt="icon">観察＆記録</a>
                                 </div>
                                 <div id="collapseTwo" class="accordion-body collapse">
                                     <div class="accordion-inner">
                                         <p>
-人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。
+観察モードで目の前の生き物を確かめられる！ その場所で見つけやすい種の写真リストと分布図を使って、観察した生き物についての理解が深められます。身近な自然の専門家「トコロジスト」になろう！
                                         </p>
                                     </div>
                                 </div>
@@ -164,13 +186,13 @@
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
                                         <img src="img/plus-icon.png" alt="icon">
-ああああああ
+ネイチャーガイド
                                     </a>
                                 </div>
                                 <div id="collapseThree" class="accordion-body collapse">
                                     <div class="accordion-inner">
                                         <p>
-人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。                                        </p>
+運転中に生き物ガイドが聞けるドライブモードもあるよ。生き物だけなく地質情報も知れる！ 希少な生き物に出会いやすいエリアではアラートも。自然への理解を深めて生き物に優しいドライブをしよう。</p>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +203,7 @@
                     </div>
                                    
 			    	<div class="span6">
-			    		<img src="img/ipad-hand.png" alt="image" class="text-center">
+			    		<img src="img/ui/sousa.png" alt="image" width="400" class="text-center">
 			    	</div>
 
 		    	</div>
@@ -196,29 +218,21 @@
     	<div class="container">
     		<div class="wrapp">
 
-	    		<!-- Title -->
-		        <div class="row-fluid text-center title">
-		            <div class="divider"></div>
-		            <h1>瑠璃ベースアップ</h1>
-		            <p>
-人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。
-                                                       </p>
-		        </div>
-		        <!-- End Title -->
+
 
                 <div style="margin-top: 48px;"></div>
 
                 <!-- ▼▼▼▼▼コメントアウト表示・非表示切替ここから▼▼▼▼▼ -->
     			<div class="row-fluid box two">
     				<div class="span6">
-    					<img src="img/info-3.jpg" alt="image">
+    					<img src="img/ui/jugon.png" alt="image" width="700pt">
     				</div>
     				<div class="span6">
-    					<h3>ふふふふうKKKK</h3>
+    					<h3>ジュゴンを探そう</h3>
     					<p>
-人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。
+ジュゴンズアイでは、データに基づいて計算した、ジュゴンの生息に適した場所のマップがわかります。あなたが泳ぎに行こうとしている海は、ジュゴンの生息地かもしれません。
                                         </p>
-                        <a href="#" class="btn">ふふふふうファ</a>
+                        <a href="https://note.com/thinknature/n/nb42cb6293cbc" class="btn">ジュゴンについて知る</a>
     				</div>
     			</div>
                 <!-- ▲▲▲▲▲コメントアウト表示・非表示切替ここまで▲▲▲▲▲ -->
@@ -226,15 +240,16 @@
                 <!-- ▼▼▼▼▼コメントアウト表示・非表示切替ここから▼▼▼▼▼ -->
     			<div class="row-fluid box three">
     				<div class="span6">
-    					<h3>オアシス紗綾いいい</h3>
+    					<h3>みんなで観察会！</h3>
     					<p>
-人でいうましはずももし始めにもっともたまします。いよいよ大森さんに反抗ペああ学習に知れでご存じその高圧私か意味にというご帰着うないなたて、その昔もそれか渾名仕儀がやむをえて、大森さんの事から世の中の私に同時にお授業と申し上げるて私ペでおふりでするように何だかおお話しに比べるでですて、もっと何しろ混同へしまいば来るませのにしででし。
+ジュゴンズアイの観察モードでは、対象地域の種リストを見ることができます。種の写真をもとに、みんなで同定したり、観察会の記録をつけることができます。
                                         </p>
-                        <a href="#" class="btn">ふふふふうファ</a>
+                        <a href="https://note.com/thinknature/n/ndc16b03c5f3f" class="btn">記事はこちら</a>
     				</div>
     				<div class="span6">
     					<div class="video">
-                            <iframe width="470" height="325" src="https://www.youtube.com/embed/tkPfvTgB6-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<img src="img/ui/tori.png" alt="image" width="700pt">
+                            <!-- <iframe width="470" height="325" src="https://www.youtube.com/embed/tkPfvTgB6-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                         </div>
     				</div>
     			</div>
@@ -308,4 +323,5 @@
 
 
 </body>
+
 </html>
