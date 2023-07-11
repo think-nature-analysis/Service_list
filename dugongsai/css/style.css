@@ -172,7 +172,7 @@ p {
 /* ▼▼▼フッター内コピーライト▼▼▼ */
 .footer p {
 	font-size: 14px;
-        background-color: #000000;
+        background-color: #1d1e22;
 }
 
 /* フォントサイズの変更------------------------------------------------------------------------------ */
@@ -867,6 +867,6 @@ hr {
   }
 }
 
-.okinawa{
+okinawa{
 text-align: center;
 }
