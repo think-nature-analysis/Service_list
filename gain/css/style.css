@@ -94,7 +94,7 @@ h2{
 }
 
 section.generic {
-	padding: 70px 0 140px 0;
+	padding: 70px 0 70px 0;
 }
 
 nav a:hover,
@@ -166,11 +166,6 @@ p {
 }
 
 
-/* ▼▼▼フッター内コピーライト▼▼▼ */
-.footer p {
-	font-size: 14px;
-        background-color: #000000;
-}
 
 /* フォントサイズの変更------------------------------------------------------------------------------ */
 
@@ -317,10 +312,12 @@ nav .navbar-inner{
 /* Header ------------------------------*/
 header {
 	display: block;
-	background: #1fb4da url("../img/slider-bg.png") bottom center repeat;
+	background: #1fb4da url("../img/header.png") bottom center repeat;
 	padding:  130px 0 0 0;
 	color: #fff;
 }
+
+
 
 header .logo {
 	padding: 0 0 72px 0;
@@ -469,7 +466,7 @@ header .btn:hover, header .btn:focus {
 
 /* Information -------------------------*/
 .information {
-	padding: 70px 0 130px 0;
+	padding: 70px 0 10px 0;
 }
 .information .divider {
 	background-position: center -132px;
@@ -609,7 +606,7 @@ header .btn:hover, header .btn:focus {
 
 .pricing-img {
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 }
 
 .pricing .divider {
@@ -709,7 +706,7 @@ header .btn:hover, header .btn:focus {
 }
 
 .contact_btn {
-	padding: 80px 0px 80px 0px;
+	padding: 20px 0px 10px 0px;
 }
 
 /* お問い合わせボタンのアニメーション早さ */
@@ -815,4 +812,92 @@ font-family: sans-serif;
 strong{
 	font-weight:bold;
 }
+
+.lefter{
+	text-align: left !important;
+}
+
+
+/* Footer ---------------------------*/
+.footer {
+	background: #1fb4da;
+}
+
+.footer p {
+	text-align: center;
+	color: #fff;
+	padding: 32px 0 32px 0;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #35363b;
+}
+
+.footer {
+  padding: 0 2rem 0 2rem;
+  font-size: 15px;
+  color: #9ca3af;
+  background: #1d1e22;
+}
+
+.footer__navi {
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer__navi li {
+  display: inline-block;
+}
+
+.footer__navi li:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+}
+
+/* ▼▼▼フッター内コピーライト▼▼▼ */
+.footer p {
+	font-size: 14px;
+        background-color: #1d1e22;;
+}
+
 
