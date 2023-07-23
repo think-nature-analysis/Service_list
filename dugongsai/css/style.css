@@ -35,6 +35,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	vertical-align: baseline;
 }
 
+.youtuber{
+
+}
+
+@media screen and (max-width: 600px){
+.youtuber {display:none}
+}
+
 footer, header, menu, nav, section {
 	display: block;
 }
