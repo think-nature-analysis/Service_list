@@ -1062,6 +1062,12 @@ hr {
 		width: 90vw !important;
 		margin-top: 50px !important;
 		text-align: center !important;
+		display: none;
+	}
+	.graph2 {
+		width: 90vw !important;
+		margin-top: 50px !important;
+		text-align: center !important;
 	}
 	.massage {
 		width: 300px;
@@ -1076,6 +1082,15 @@ hr {
 	border-radius: 30px;
         text-align: center;
 	padding: 20px;
+}
+.graph2 {
+	background: #f5f8e7;
+        height: auto;
+	width: auto;
+	border-radius: 30px;
+        text-align: center;
+	padding: 20px;
+	display: none;
 }
 .www {
 	display: flex;
