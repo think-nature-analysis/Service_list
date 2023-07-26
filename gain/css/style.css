@@ -1056,11 +1056,12 @@ hr {
 		font-size: 2em;
 	}
 	header h3 {
-		font-size: 16px !important;
+		font-size: 20px !important;
 	}
 	.graph {
-		width: 400px !important;
+		width: 90vw !important;
 		margin-top: 50px !important;
+		text-align: center !important;
 	}
 	.massage {
 		width: 300px;
