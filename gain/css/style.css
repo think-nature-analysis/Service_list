@@ -416,7 +416,7 @@ header .btn:hover, header .btn:focus {
 
 /* Features ----------------------------*/
 .features img {
-	margin-right: 20px;
+	/* margin-right: 20px; */
 }
 
 .features h2 {
@@ -1062,13 +1062,14 @@ hr {
 		width: 90vw !important;
 		margin-top: 50px !important;
 		text-align: center !important;
-		display: none;
+		display: none !important;
 	}
 	.graph2 {
-		width: 90vw !important;
+		/* width: 70vw !important; */
 		margin-top: 50px !important;
 		text-align: center !important;
-		display: block;
+		display: block !important;
+		margin: auto;
 	}
 	.massage {
 		width: 300px;
