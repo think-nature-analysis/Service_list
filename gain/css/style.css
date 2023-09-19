@@ -25,6 +25,8 @@
 
 
 
+
+
 /* General -----------------------------*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, small, strong, ol, ul, li, form, label, table, caption, tr, td, footer, header {
 	margin: 0;
@@ -40,7 +42,7 @@ footer, header, menu, nav, section {
 }
 
 * {
-	font-family: 'Noto Sans JP';
+    font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -142,6 +144,14 @@ p {
 .title h1 {
 	font-size: 29px;
 }
+
+.taitoru2 {
+	font-size: 29px !important;
+	text-shadow: 2px 2px 3px #115511;
+        font-weight: bold;
+	color: #EEE;
+}
+
 
 /* ▼▼▼informationセクションの中のコンテンツの見出し▼▼▼ */
 .information h3 {
@@ -319,7 +329,7 @@ nav .navbar-inner{
 /* Header ------------------------------*/
 header {
 	display: block;
-	background: #1fb4da url("../img/2header.jpg") top center repeat;
+	background: #1fb4da url("../img/new/TN-GAIN-illust03.jpg") top center repeat;
 	/* background: url(../img/mv1.png);
 	background-repeat: no-repeat;
 	background-position: right; */
@@ -438,7 +448,7 @@ header .btn:hover, header .btn:focus {
 /* Extra -------------------------------*/
 .extra{
 	/* background: rgb(6 80 7); */
-	background: url(../img/mv2.jpg);
+	background: url(../img/new/TN-GAIN-illust02.jpg);
 	background-size: cover;
 	padding-bottom: 0!important;
 }
@@ -961,6 +971,7 @@ hr {
 	color: green !important;
 	font-weight: 600;
         font-size: 20px;
+
 }
 .hdtxt {
 	background-color: #e1f0c4;
@@ -988,7 +999,7 @@ hr {
 	margin: auto;
 }
 .stepone, .steptwo {
-	width: fit-content;
+	/*width: fit-content;*/
 }
 @media (max-width: 1400px) {
 	.step {
@@ -1014,6 +1025,10 @@ hr {
     text-shadow: 0px 0px 5px rgb(0, 0, 0) !important;
 	font-size: 40px !important;
 	padding-bottom: 50px !important;
+}
+
+.ctitle2 {
+	padding: 0px 100px 20px !important;
 }
 .osp {
 	font-size: 26px !important;
@@ -1078,7 +1093,7 @@ hr {
 
 }
 .graph {
-	background: #f5f8e7;
+	background: #FFF;/*#f5f8e7;*/
         height: auto;
 	width: auto;
 	border-radius: 30px;
@@ -1087,7 +1102,7 @@ hr {
 	display: block;
 }
 .graph2 {
-	background: #f5f8e7;
+	background: #FFF; /*#f5f8e7;*/
         height: auto;
 	width: auto;
 	border-radius: 30px;
