@@ -336,7 +336,8 @@ header {
 	padding:  60px 0 0 0;
 	color: #fff;
 	background-size: cover;
-	height: 800px;
+	width:auto;
+	/*height: 800px;*/
 }
 
 /*@media (max-width: 768px) {
