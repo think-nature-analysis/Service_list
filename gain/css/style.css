@@ -339,7 +339,7 @@ header {
 	height: 800px;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 header {
 	display: block;
 	background: #1fb4da url("../img/new/TN-GAIN-illust02.jpg") center center / cover no-repeat;
@@ -350,7 +350,7 @@ header {
 	background-size: contain;
 	height: 500px;
 }
-}
+}*/
 /*@media (max-width: 768px) {
 
 header {
