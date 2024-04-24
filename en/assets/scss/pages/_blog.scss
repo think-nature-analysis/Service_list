@@ -1,0 +1,144 @@
+/*--
+/*  16 - Blog CSS
+/*----------------------------------------*/
+
+.techwix-blog-section {
+    padding-bottom: 70px;
+}
+.techwix-blog-wrap {
+    padding-top: 20px;
+}
+
+// Single Blog
+.single-blog {
+    margin-top: 30px;
+    
+    & .blog-image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        & a {
+            display: block;
+            & img {
+                transition: $transition-default; 
+            }
+        }
+        & .top-meta {
+            position: absolute;
+            top: 35px;
+            left: 30px;
+            & .date {
+                width: 65px;
+                height: 65px;
+                line-height: 65px;
+                text-align: center;
+                background: linear-gradient( -180deg, rgb(67,186,255) 0%, rgb(113,65,177) 100%);
+                color: #fff;
+                font-size: 14px;
+                line-height: 18px;
+                border-radius: 5px;
+                font-family: $heading-font;
+                display: inline-block;
+                text-align: center;
+                line-height: 12px;
+                padding: 10px;
+                & span {
+                    font-size: 28px;
+                    line-height: 18px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    display: block;
+                }
+            }
+        }
+    }
+    & .blog-content {
+        padding: 25px 30px 40px;
+        background: $white;
+        width: 90%;
+        position: relative;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-48%);
+        margin-top: -40px;
+        @media #{$desktop-device} {
+            padding: 25px 20px 40px;
+            width: 95%;
+        }
+
+        &  .blog-meta {
+
+            & span {
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #999999;
+                margin-right: 15px;
+                @media #{$small-mobile}{
+                    margin-right: 12px;
+                }
+
+                &  i {
+                    color: $primary;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        & .title {
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 600;
+            color: $heading-color;
+            padding-right: 15px;
+            margin-top: 15px;
+            @media #{$desktop-device} {
+                padding-right: 0;
+            }
+        }
+    }
+
+    & .blog-btn {
+
+        & .blog-btn-link {
+            font-size: 12px;
+            font-family: $heading-font;
+            font-weight: 600;
+            color: $primary;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            transition: $transition-default;
+
+            & i {
+                transition: $transition-default; 
+            }
+
+            &:hover {
+                & i {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    &:hover {
+       & .blog-image {
+            & a {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+ 
+// Blog Page Style
+
+.techwix-blog-grid-wrap {
+    margin-top: -30px;
+}
+
+
+
+

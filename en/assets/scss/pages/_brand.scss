@@ -1,0 +1,66 @@
+/*--
+/*  13 - Brand CSS
+/*----------------------------------------*/
+
+// Brand Wrapper 
+.brand-wrapper{
+          
+}
+
+// Brand Title
+.brand-title{
+    font-size: 26px;
+    font-weight: 500;
+    font-family: $body-font;
+    color: $body-color;
+    margin-top: -7px;
+    @media #{$small-mobile}{
+        font-size: 20px;
+    }
+
+    & span{
+        color: $primary;
+        font-weight: 700;
+    }
+}
+
+// Brand Active
+.brand-active{
+    max-width: 1070px;
+    width: 100%;
+    margin: 45px auto 0;
+}
+
+// Home Style Two
+
+.techwix-brand-section-02 {
+
+    & .brand-wrapper {
+        border-top: 1px solid #e1e1e1;
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+}
+
+
+// Home Style Three
+
+.techwix-brand-section-03 {
+
+    & .brand-wrapper {
+        padding-top: 90px;
+    }
+
+    & .brand-active {
+        margin-top: 0;
+    }
+}
+
+// Home Style Five
+
+.techwix-brand-section-04 {
+
+    & .brand-wrapper {
+        padding-top: 0;
+    }
+}

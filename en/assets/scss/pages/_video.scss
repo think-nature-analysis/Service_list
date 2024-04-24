@@ -1,0 +1,120 @@
+/*--
+/*  15 - Video CSS
+/*----------------------------------------*/
+
+.techwix-video-section {
+
+    & .video-wrap {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        padding-top: 150px;
+        padding-bottom: 195px;
+        margin-top: -250px;
+        overflow: hidden;
+        position: relative;
+        z-index: 5;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(#2d2d4e, 0.5);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        & .shape-1 {
+            position: absolute;
+            left: 50px;
+            top: 120px;
+            z-index: -1;
+
+            & svg {
+                fill: rgb(65, 183, 254);
+            }
+        }
+
+        & .shape-2 {
+            position: absolute;
+            right: -14%;
+            bottom: -40%;
+            z-index: -1;
+        }
+
+        & .shape-3 {
+            position: absolute;
+            right: 6%;
+            bottom: 30%;
+            z-index: -1;
+
+            & svg {
+                fill: $white;
+                opacity: 0.5;
+            }
+        }
+
+        & .video-content {
+            max-width: 385px;
+            margin: 0 auto;
+            
+            .play-btn-02 {
+                position: inherit;
+                margin-top: 60px;
+                & a {
+            
+                    &::before {
+                        border: 2px solid $primary;
+                    }
+                    &::after {
+                        border: 2px solid $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.techwix-video-section {
+    @media #{$desktop-device} {
+        & .video-wrap {
+            padding-top: 110px;
+            padding-bottom: 160px;
+        }
+    }
+    @media #{$tablet-device} {
+        & .video-wrap {
+            padding-top: 100px;
+            padding-bottom: 130px;
+
+            & .shape-2 {
+                right: -32%;
+            }
+        }
+    }
+    @media #{$large-mobile} {
+        & .video-wrap {
+
+            & .shape-2 {
+                right: -53%;
+            }
+        }
+    }
+    @media #{$small-mobile} {
+        & .video-wrap {
+
+            & .shape-1 {
+                display: none;
+            }
+            & .shape-2 {
+                display: none;
+            }
+            & .shape-3 {
+                display: none;
+            }
+        }
+    }
+}

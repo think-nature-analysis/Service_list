@@ -1,0 +1,179 @@
+/*--
+/*  07 - Counter CSS
+/*----------------------------------------*/
+
+
+.techwix-counter-section {
+    background: #e5effa;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    & .counter-wrap {
+        margin-top: -30px;
+    }
+    
+}
+
+.single-counter {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    & .counter-img {
+        height: 95px;
+        width: 95px;
+        line-height: 95px;
+        text-align: center;
+        background: $white;
+        box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+    }
+
+    & .counter-content {
+        margin-left: 20px;
+        & span {
+            font-size: 40px;
+            line-height: 26px;
+            font-family: $heading-font;
+            font-weight: 700;
+            color: $primary;
+        }
+
+        & p {
+            font-size: 12px;
+            line-height: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $body-color;
+        }
+    }
+}
+
+// Home Style Three
+
+.techwix-counter-section-02 {
+
+    & .counter-wrap {
+        border: 1px solid #e1e1e1;
+        background: $white;
+        margin-bottom: -120px;
+        position: relative;
+        z-index: 5;
+        padding: 15px 25px 75px;
+    }
+
+    & .single-counter  {
+        position: relative;
+        margin-left: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            background: #e1e1e1;
+            width: 1px;
+            height: 220px;
+            transform: translateY(-44%);
+        }
+
+        &.single-counter-4 {
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+.techwix-counter-section-02 {
+    @media #{$desktop-device} {
+        & .counter-wrap {
+            padding: 15px 55px 75px;
+        }
+        & .single-counter  {
+            margin-left: 0px;
+    
+            &::before {
+                display: none;
+            }
+        }
+    }
+    @media #{$extra-small-mobile} {
+        & .counter-wrap {
+            padding: 15px 28px 75px;
+        }
+    }
+}
+
+// Home Style Five
+
+.techwix-counter-section-03 {
+    background: #010642;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(#01013f, 0.9);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+.single-counter-02 {
+    margin-top: 30px;
+    
+    & span {
+        font-size: 50px;
+        line-height: 30px;
+        font-family: $heading-font;
+        font-weight: 700;
+        color: $primary;
+    }
+
+    & p {
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: $white;
+    }
+}
+
+// About Page Style
+
+.techwix-counter-section-04 {
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &::before {
+        display: none;
+    }
+
+    & .counter-wrap {
+        background: linear-gradient(55deg, #693eaa 25%, #47bbff 100%);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: -110px;
+        padding-top: 65px;
+        padding-bottom: 95px;
+
+        & .single-counter-02 {
+            
+            & span {
+                color: $white;
+            }
+        }
+    }
+}
+

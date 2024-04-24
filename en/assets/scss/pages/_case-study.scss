@@ -1,0 +1,182 @@
+/*--
+/*  08 - Case Study CSS
+/*----------------------------------------*/
+ 
+.case-study-content-wrap {
+    padding-top: 65px;
+}
+.single-case-study {
+    position: relative;
+    & .case-study-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+
+        
+        & a {
+            display: block;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, #FFFFFF00 25%, #00000082 63%);
+                z-index: 0;
+            }
+        }
+
+        & .top-meta {
+            position: absolute;
+            top: 35px;
+            left: 30px;
+            height: 40px;
+            line-height: 38px;
+            padding: 0 15px;
+            border-radius: 5px;
+            background: $white;
+        }
+    }
+
+    & .case-study-content {
+        position: absolute;
+        bottom: 35px;
+        left: 30px;
+
+        & .title {
+            font-size: 22px;
+            line-height: 30px;
+            color: $white;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 24px;
+            color: $primary;
+        }
+    }
+
+    &:hover {
+        & .case-study-content {
+    
+            & .title {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.case-study-active {
+
+    & .swiper-pagination{
+        position: relative;
+        margin-top: 50px;
+        & .swiper-pagination-bullet {
+            margin: 0 7px;
+        }
+    }
+}
+
+// Home Study Three
+.techwix-case-study-section-02 {
+    background: #010f31;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    & .single-case-study-02 {
+        position: relative;
+        & .case-study-img {
+            position: relative;
+            overflow: hidden;
+    
+            & a {
+                display: block;
+    
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(21deg, rgba(8,106,216,1) 22%, rgba(146,152,197,0.1740897042410714) 40%);
+                    z-index: 0;
+                    display: none;
+                }
+                
+            }
+        }
+    
+        & .case-study-content {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            max-width: 285px;
+            display: none;
+            @media #{$extra-small-mobile}  {
+                bottom: 10px;
+                left: 25px;
+            }
+
+            & .sub-title {
+                font-size: 14px;
+                line-height: 27px;
+                font-weight: 500;
+                color: $white;
+            }
+    
+            & .title {
+                font-size: 24px;
+                line-height: 27px;
+                color: $heading-color;
+
+                & span {
+                    display: inline-block;
+                    background: $white;
+                    margin-top: 3px;
+                    padding: 0 5px;
+                }
+            }
+    
+            & .text {
+                font-size: 14px;
+                line-height: 24px;
+                color: $white;
+                margin-top: 20px;
+            }
+        }
+    
+        &:hover {
+            & .case-study-content {
+        
+                & .title {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    & .swiper-slide {
+
+        &.swiper-slide-active {
+            & .single-case-study-02 {
+
+                & .case-study-img {
+            
+                    & a {
+            
+                        &::before {
+                            display: block;
+                        }
+                    }
+                }
+                & .case-study-content {
+                    display: block;
+                }
+            }
+        }
+    }
+}
