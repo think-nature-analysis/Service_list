@@ -161,7 +161,7 @@ p {
 .pricing_text_wapper p {
 	font-size: 21px;
 	font-weight: 600;
-    color: green;
+    color: navy !important;
     text-align: center;
 }
 
@@ -326,7 +326,7 @@ nav .navbar-inner{
 /* Header ------------------------------*/
 header {
 	display: block;
-	background: #1fb4da url("../img/new/TN-GAIN-illust02.jpg") center center / cover no-repeat;
+	background: #1fb4da url("../img/new/TN-Finance-banner.png") center center / cover no-repeat;
 	/* background: url(../img/mv1.png);
 	background-repeat: no-repeat;
 	background-position: right; */
@@ -336,34 +336,6 @@ header {
 	width:auto;
 	/*height: 800px;*/
 }
-
-/*@media (max-width: 768px) {
-header {
-	display: block;
-	background: #1fb4da url("../img/new/TN-GAIN-illust02.jpg") center center / cover no-repeat;
-	background-repeat: no-repeat;
-	background-position: center; 
-	padding:  60px 0 0 0;
-	color: #fff;
-	background-size: contain;
-	height: 500px;
-}
-}*/
-/*@media (max-width: 768px) {
-
-header {
-	display: block;
-	background: #1fb4da url("../img/new/tngain_mob.png") top center repeat;
-	background-repeat: no-repeat;
-	background-position: center; 
-	padding:  60px 0 0 0;
-	color: #fff;
-	background-size: contain;
-	height: 500px;
-}
-
-}*/
-
 
 
 
@@ -533,7 +505,7 @@ header .btn:hover, header .btn:focus {
 	display: flex;
 	align-items: center;
 	font-weight: 600;
-	color: green;
+	color: navy !important;
 }
 
 .information img {
@@ -863,7 +835,7 @@ img.appstore  {
 
 .head2 {
 	size: 180%;
-	text-shadow: 5px 2px 3px #115511;
+	text-shadow: 5px 2px 3px #EEEEEE;
         font-weight: bold;
 }
 
@@ -881,7 +853,7 @@ strong{
 
 /* Footer ---------------------------*/
 .footer {
-	background: #1fb4da;
+	background: #1fdab4;
 }
 
 .footer p {
@@ -924,7 +896,7 @@ hr {
   padding: 0 2rem 0 2rem;
   font-size: 15px;
   color: #9ca3af;
-  background: #2f7330;
+  background: #2f3073 !important;
 }
 
 .footer__navi {
@@ -961,7 +933,7 @@ hr {
 /* ▼▼▼フッター内コピーライト▼▼▼ */
 .footer p {
 	font-size: 16px;
-        background-color: rgb(47, 115, 48);;
+        background-color: rgb(47, 48, 115);;
 }
 
 .image-black {
@@ -973,7 +945,7 @@ hr {
 	padding-top: 50px;
 	font-weight: 1200 !important;
 	text-align: left !important;
-        color: #104F24 !important;
+        color: #10244F !important;
 letter-spacing: 5px;
 }
 
@@ -982,7 +954,7 @@ letter-spacing: 5px;
 }
 
 .text > span {
-  background: #508F44;
+  background: #50448F;
 }
 
 br {
@@ -1005,21 +977,21 @@ line-height: 10em !important;
 	float: right;
 }
 .hd1 {
-	color: green !important;
+	color: navy !important;
 	font-size: 30px;
 	font-weight: 600;
 }
 .txt1 {
-	color: green !important;
+	color: navy !important;
 	font-weight: 600;
         font-size: 20px;
 
 }
 .hdtxt {
-	background-color: #e1f0c4;
+	background-color: #c4e1f0;
 }
 .pull-right {
-	color: green !important;
+	color: navy !important;
 }
 .span6 h3 {
 	color: green;
