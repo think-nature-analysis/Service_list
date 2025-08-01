@@ -4580,6 +4580,8 @@ textarea:-ms-input-placeholder {
 .about-author-info-wrap .about-author .designation {
   font-size: 12px;
   line-height: 18px;
+  margin-top: 30px;
+
 }
 
 .about-author-info-wrap .about-info {
