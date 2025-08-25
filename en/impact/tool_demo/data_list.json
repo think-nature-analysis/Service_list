@@ -1,0 +1,12 @@
+{
+    "layers": [
+      {
+        "id": "PlantSR",
+        "name": "Plant Species Richness",
+        "url": "./raster/plantSR_nan.tif",
+        "defaultColormap": "Spectral",
+        "defaultOpacity": 0.9,
+        "type": "raster"
+      }
+    ]
+  }
