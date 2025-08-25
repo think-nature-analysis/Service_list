@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TN LightBrain Demo v0</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="mapcontainer"></div>
+    <div id="infoPanel">
+      <span id="closeButton">&times;</span>
+      <div id="info"></div>
+      <div id="tabHeader">
+        <button class="tab-btn active" data-tab="info1">情報1</button>
+        <button class="tab-btn" data-tab="info2">情報2</button>
+        <button class="tab-btn" data-tab="info3">情報3</button>
+      </div>
+      <div id="info1Tab" class="tab-content active">
+        <div class="image-header1">
+          <h3 id="imageTitle1">詳細情報1</h3>
+          <span id="imageTimestamp1"></span>
+        </div>
+        <img id="locationImage1" class="tab-info1" src="" alt="サンプル画像1">
+      </div>
+      <div id="info2Tab" class="tab-content">
+        <div class="image-header2">
+          <h3 id="imageTitle2">詳細情報2</h3>
+          <span id="imageTimestamp2"></span>
+        </div>
+        <img id="locationImage2" class="tab-info2" src="" alt="サンプル画像2">
+      </div>
+      <div id="info3Tab" class="tab-content">
+        <div class="image-header3">
+          <h3 id="imageTitle3">詳細情報3</h3>
+          <span id="imageTimestamp3"></span>
+        </div>
+        <img id="locationImage3" class="tab-info3" src="" alt="サンプル画像3">
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <div id="homeControl">
+      <button id="homeButton">HOME</button>
+    </div>
+    <div id="csvControl">
+      <button id="loadCSVButton">Import CSV</button>
+    </div>
+
+    <!-- レイヤー選択コンテナ -->
+    <div id="layerSelectionContainer" class="layer-selection">
+      <h3>Selected layers [maximum 2]</h3>
+      <div id="layerList" class="layer-list">
+        <!-- レイヤーのチェックボックスはJavaScriptで動的に生成 -->
+      </div>
+    </div>
+
+    <!-- アクティブレイヤー設定コンテナ -->
+    <div id="activeLayersContainer" class="active-layers">
+      <h3>アクティブレイヤー設定</h3>
+      <div id="layer1Settings" class="layer-settings" style="display: none;">
+        <h4 id="layer1Name">レイヤー1</h4>
+        <div class="opacity-container">
+          <label for="layer1Opacity">透過度:</label>
+          <input type="range" id="layer1Opacity" class="opacitySlider" min="0" max="1" step="0.1" value="0.7">
+        </div>
+        <div class="colormap-container">
+          <label for="layer1Colormap">カラーマップ:</label>
+          <select id="layer1Colormap" class="colormap-select">
+            <option value="Spectral">Spectral</option>
+            <option value="gnuplot2">gnuplot2</option>
+            <option value="RdYlGn">RdYlGn</option>
+            <option value="RdYlBu">RdYlBu</option>
+            <option value="viridis">viridis</option>
+            <option value="jet">jet</option>
+            <option value="ocean">ocean</option>
+            <option value="nipy_spectral">nipy_spectral</option>
+            <option value="terrain">terrain</option>
+            <option value="binary">binary</option>
+            <option value="Reds">Reds</option>
+            <option value="Blues">Blues</option>
+            <option value="Greens">Greens</option>
+            <option value="RdBu">RdBu</option>
+            <option value="PRGn">PRGn</option>
+          </select>
+          <div class="reverse-container">
+            <input type="checkbox" id="layer1Reverse" class="reverse-checkbox">
+            <label for="layer1Reverse">反転</label>
+          </div>
+        </div>
+        <div class="range-container">
+          <div class="slider-container">
+            <label for="layer1Min">最小値:</label>
+            <span id="layer1MinDisplay">loading</span>
+            <input type="range" id="layer1Min" class="range-slider" min="0" max="1" step="0.01" value="0">
+          </div>
+          <div class="slider-container">
+            <label for="layer1Max">最大値:</label>
+            <span id="layer1MaxDisplay">loading</span>
+            <input type="range" id="layer1Max" class="range-slider" min="0" max="1" step="0.01" value="1">
+          </div>
+        </div>
+      </div>
+
+      <div id="layer2Settings" class="layer-settings" style="display: none;">
+        <h4 id="layer2Name">レイヤー2</h4>
+        <div class="opacity-container">
+          <label for="layer2Opacity">透過度:</label>
+          <input type="range" id="layer2Opacity" class="opacitySlider" min="0" max="1" step="0.1" value="0.7">
+        </div>
+        <div class="colormap-container">
+          <label for="layer2Colormap">カラーマップ:</label>
+          <select id="layer2Colormap" class="colormap-select">
+            <option value="Spectral">Spectral</option>
+            <option value="gnuplot2">gnuplot2</option>
+            <option value="RdYlGn">RdYlGn</option>
+            <option value="RdYlBu">RdYlBu</option>
+            <option value="viridis">viridis</option>
+            <option value="jet">jet</option>
+            <option value="ocean">ocean</option>
+            <option value="nipy_spectral">nipy_spectral</option>
+            <option value="terrain">terrain</option>
+            <option value="binary">binary</option>
+            <option value="Reds">Reds</option>
+            <option value="Blues">Blues</option>
+            <option value="Greens">Greens</option>
+            <option value="RdBu">RdBu</option>
+            <option value="PRGn">PRGn</option>
+          </select>
+          <div class="reverse-container">
+            <input type="checkbox" id="layer2Reverse" class="reverse-checkbox">
+            <label for="layer2Reverse">反転</label>
+          </div>
+        </div>
+        <div class="range-container">
+          <div class="slider-container">
+            <label for="layer2Min">最小値:</label>
+            <span id="layer2MinDisplay">loading</span>
+            <input type="range" id="layer2Min" class="range-slider" min="0" max="1" step="0.01" value="0">
+          </div>
+          <div class="slider-container">
+            <label for="layer2Max">最大値:</label>
+            <span id="layer2MaxDisplay">loading</span>
+            <input type="range" id="layer2Max" class="range-slider" min="0" max="1" step="0.01" value="1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mapcontainer">
+    <div id="logo-container">
+      <img src="./logo.png" id="bottom-logo" alt="ロゴ">
+    </div>
+  </div>
+
+  <!-- スクリプト読み込み -->
+  <script src="https://cdn.jsdelivr.net/gh/timothygebhard/js-colormaps@master/js-colormaps.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/georaster"></script>
+  <script src="https://unpkg.com/georaster-layer-for-leaflet"></script>
+  <script src="https://unpkg.com/geoblaze"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/layers.js"></script>
+  <script src="./js/markers.js"></script>
+  <script src="./js/panels.js"></script>
+  <script src="./js/map.js"></script>
+  <script src="./js/main.js"></script>
+  <!-- ベクターレイヤー関連のJavaScriptを追加 -->
+  <script src="./js/vector.js"></script>
+</body>
+</html>
